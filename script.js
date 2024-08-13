@@ -13,22 +13,30 @@ function submeter(){
     let email = document.getElementById("email").value;
     console.log(nome);
     console.log (valida_idade(idade))
+    console.log(email)
+
 
 }
 function valida_idade(idade){
+    
 
     if (idade=""){
         alert ("esse campo não pode ser vazio")
         return false 
     }
-    if(idade = String){
-    alert("não pode colocar letra")
-return false
+
+    idade = idade.trim();
+
+    if (/[a-zA-Z]/.test(idade)){
+       alert("Contém letras")
+        return false
     }
+   if (/[\d3.\d3.\d3\d2]/.teste(idade)){
+    console.log("valido")
+   }
+
+    
     return true
-
-
-
 }
 
 
