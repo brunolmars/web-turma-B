@@ -7,16 +7,21 @@ p{
     
 }
 .entrada_usuario {
+    
     border: 1px solid;
     text-align: center;
     border-left: auto;
     border-right: auto;
     background-color: blanchedalmond;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 .rodape{
     border: 2px, solid;
     position: fixed;
-    width: 100 ;
+    width: 100px ;
     text-align: center;
     padding-top: 2px;
     padding-bottom: 2px;
