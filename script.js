@@ -31,8 +31,9 @@ function valida_idade(idade){
        alert("Contém letras")
         return false
     }
-   if (/[\d3.\d3.\d3\d2]/.teste(idade)){
-    console.log("valido")
+   if (!/^[\d3.\d3.\d3\d2]$/.teste(idade)){
+    alert("só pode conter numero, . ou - ")
+    return false
    }
 
     
