@@ -8,4 +8,11 @@ p{
 }
 .entrada_usuario {
     border: 1px solid;
+    text-align: center;
+}
+.rodape{
+    border: 2px, solid;
+    position: fixed;
+    width: 100 ;
+    
 }
