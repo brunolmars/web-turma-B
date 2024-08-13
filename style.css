@@ -14,5 +14,9 @@ p{
     border: 2px, solid;
     position: fixed;
     width: 100 ;
-    
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+
 }
