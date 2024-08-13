@@ -9,6 +9,9 @@ p{
 .entrada_usuario {
     border: 1px solid;
     text-align: center;
+    border-left: auto;
+    border-right: auto;
+    background-color: blanchedalmond;
 }
 .rodape{
     border: 2px, solid;
@@ -17,6 +20,7 @@ p{
     text-align: center;
     padding-top: 2px;
     padding-bottom: 2px;
+    background-color: beige;
 
 
 }
