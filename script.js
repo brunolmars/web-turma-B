@@ -31,9 +31,13 @@ function valida_idade(idade){
        alert("Contém letras")
         return false
     }
-   if (!/^[\d3.\d3.\d3\d2]$/.teste(idade)){
+   if (!/^[\w3.\w3.\d3\w2]$/.teste(idade)){
     alert("só pode conter numero, . ou - ")
     return false
+   } 
+   if(idade.leight == 11 || idade.leight == 14 ){
+    alert("formato invalido")
+    
    }
 
     
