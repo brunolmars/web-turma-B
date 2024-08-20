@@ -43,6 +43,8 @@ function valida_cpf(cpf){
     alert("Formato invalido")
     return false
    }
+   let digito_verificador1 = digitoverificador
+   
 
    let soma = 0
 
@@ -80,6 +82,10 @@ function valida_cpf(cpf){
     if(verificado_2 != cpf.Charat(10)){
         alert("cpf invalido")
     } 
+
+    verificado_2 = digito_verificador1 
+
+    return true 
 
 
 
