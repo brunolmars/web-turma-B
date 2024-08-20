@@ -51,14 +51,37 @@ function valida_cpf(cpf){
     soma = soma + (cpf.Charat(i-1) * (10 - (i-1)))
     }
         console.log(soma)
+        let resto = soma % 11
 
-
-
-   if(/\d{3}-\d{3}-\d{3}-\d{2}/.teste(cpf))
-
-    
-    return true
+        if(resto < 2){
+            if(cpf.Charat(9) != 0 )
+            alert("cpf invalido")
+        } 
 }
+    let digitoverificador = 11 - resto
+    if(digitoverificador != cpf.Charat(9)){
+        alert("cpf invalido")
+    }
+
+    let s = 0 
+
+    for(let i = 1; i <= 11; i++ ){
+        console.log(cpf.Charat(i-1))
+        s = s + (cpf.Charat(i-1) * (11 - (i - 1)))
+    }
+    console.log(s)
+
+    let r = s % 11 
+    if(resto < 2){
+        if(cpf.Charat(10) != 0 )
+        alert("cpf invalido")
+    }
+    let verificado_2 = 11 - r
+    if(verificado_2 != cpf.Charat(10)){
+        alert("cpf invalido")
+    } 
+
+
 
 
 
