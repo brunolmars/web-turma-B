@@ -17,7 +17,7 @@ function submeter(){
 
 
 }
-function valida_idade(cpf){
+function valida_cpf(cpf){
     
 
     if (cpf=""){
@@ -31,7 +31,7 @@ function valida_idade(cpf){
        alert("Contém letras")
         return false
     }
-   if (!/^[\w3.\w3.\d3\w2]$/.teste(cpf)){
+   if (!/^[\w3]$/.teste(cpf)){
     alert("só pode conter numero, . ou - ")
     return false
    } 
@@ -39,6 +39,22 @@ function valida_idade(cpf){
     alert("formato invalido")
     
    }
+   if(cpf.leight != 11 && cpf.leight != 14 ){
+    alert("Formato invalido")
+    return false
+   }
+
+   let soma = 0
+
+   for(let i = 1;i <= 9; i++){
+    console.log(cpf.Charat(i-1));
+    soma = soma + (cpf.Charat(i-1) * (10 - (i-1)))
+    }
+        console.log(soma)
+
+
+
+   if(/\d{3}-\d{3}-\d{3}-\d{2}/.teste(cpf))
 
     
     return true
