@@ -9,33 +9,33 @@ console.log(titulo);
 
 function submeter(){
     let nome = document.getElementById("nome").value;
-    let idade = document.getElementById("idade").value;
+    let cpf = document.getElementById("cpf").value;
     let email = document.getElementById("email").value;
     console.log(nome);
-    console.log (valida_idade(idade))
+    console.log (valida_idade(cpf))
     console.log(email)
 
 
 }
-function valida_idade(idade){
+function valida_idade(cpf){
     
 
-    if (idade=""){
+    if (cpf=""){
         alert ("esse campo não pode ser vazio")
         return false 
     }
 
-    idade = idade.trim();
+    cpf = cpf.trim();
 
-    if (/[a-zA-Z]/.test(idade)){
+    if (/[a-zA-Z]/.test(cpf)){
        alert("Contém letras")
         return false
     }
-   if (!/^[\w3.\w3.\d3\w2]$/.teste(idade)){
+   if (!/^[\w3.\w3.\d3\w2]$/.teste(cpf)){
     alert("só pode conter numero, . ou - ")
     return false
    } 
-   if(idade.leight == 11 || idade.leight == 14 ){
+   if(cpf.leight == 11 || cpf.leight == 14 ){
     alert("formato invalido")
     
    }
